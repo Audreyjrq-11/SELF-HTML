@@ -1,20 +1,70 @@
-body {
-    background-color: hsl(0, 8%, 58%);
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+/* style.css */
 
-  h2 {
-    font-size: 2em; /* Larger font size */
-    color: #333; /* Dark gray color */
-    font-family: sans-serif; /* Sans-serif font */
-    margin-bottom: 15px; /* Space below the h2 */
-  }
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    align-items: center; /* Vertical alignment */
+}
+
+header .logo {
+    flex: 1; /* Takes up available space */
+}
+
+header .nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.main-content {
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 200px; /* Fixed width for sidebar */
+}
+
+.content {
+    flex: 1; /* Takes up remaining space */
+    padding: 20px;
+}
+
+.content-items {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-item {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+footer {
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

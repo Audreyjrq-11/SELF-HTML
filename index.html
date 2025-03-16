@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Pro </title>
-
+    <title>Flexible Website Template</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>SUPERPRO</h1>
-    <p>I am super good</p>
-    <h2>Superupseruperuper</h2>
-</body>
-  
+    <header class="flex-container">
+        <div class="logo">Logo</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="flex-container main-content">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h1>Main Content</h1>
+            <p>This is the main content area of your website. Use flexbox to make it responsive and flexible.</p>
+            <div class="flex-container content-items">
+                <div class="content-item">Item A</div>
+                <div class="content-item">Item B</div>
+                <div class="content-item">Item C</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex-container footer">
+        <p>&copy; 2024 My Website</p>
+    </footer>
 
     <script src="script.js"></script>
-
+</body>
 </html>

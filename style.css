@@ -89,3 +89,86 @@ body {
         display: block;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Minimum 80% viewport height */
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Subtle gradient */
+    padding: 2rem;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+    margin-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-right: 0;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+
+
+

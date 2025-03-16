@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: hsl(0, 8%, 58%);
   }
   
   h1 {
@@ -10,4 +10,11 @@ body {
   p {
     font-family: verdana;
     font-size: 20px;
+  }
+
+  h2 {
+    font-size: 2em; /* Larger font size */
+    color: #333; /* Dark gray color */
+    font-family: sans-serif; /* Sans-serif font */
+    margin-bottom: 15px; /* Space below the h2 */
   }
